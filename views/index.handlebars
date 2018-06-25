@@ -1,28 +1,41 @@
-<h1>Eat Da Burger</h1>
-<img src="https://images.vexels.com/media/users/3/144007/isolated/preview/6150d0cfaabb9b2fc29008ee0f8cf099-burger-fast-food-stroke-icon-by-vexels.png">
+<h1 class="title">Eat Da Burger</h1>
+<img class="burgerImage" src="/assets/img/burger.png">
 <div class="ready">
-    <ul>
-       {{#each burgers}} {{#unless devoured}} <ul><li>{{name}}</li>
+    <div class="toEat">
+        <ul>
 
-	    <li><button class="eat" data-id="{{id}}" data-eaten="{{devoured}}">
-		EAT ME
-	</button>
-    </li>
-    </ul>
-    {{/unless}} {{/each}}
-    </ul>
-</div>
+            {{#each burgers}} {{#unless devoured}}
+            <li>
+                {{burger_name}}
+                <button class="eat" data-id="{{id}}" data-eaten="{{devoured}}">
+                    EAT ME
+                </button>
+            </li>
+            {{/unless}} {{/each}}
 
-<div class="eaten">
-    {{#each burgers}} {{#if devoured}} {{name}} {{/if}} {{/each}}
-</div>
-
-<h2>Make a Burger</h2>
-<form class="create-form">
-    <div>
-        <label for="ca">Burger:</label>
-        <input type="text" id="ca" name="name">
+        </ul>
     </div>
 
-    <button type="submit">Add Burger</button>
-</form>
+    <div class="eaten">
+
+        {{#each burgers}} {{#if devoured}}
+        <ul>
+            <li>
+                {{burger_name}}
+            </li>
+        </ul>
+        {{/if}} {{/each}}
+
+    </div>
+
+    <div class="form">
+        <h2 class="formTitle">Make a Burger</h2>
+        <form class="create-form">
+            <div>
+                <label for="ca">Burger:</label>
+                <input type="text" id="ca" name="burger_name">
+            </div>
+
+            <button type="submit">Add Burger</button>
+        </form>
+    </div>

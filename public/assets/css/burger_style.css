@@ -1,0 +1,50 @@
+body{
+    background-color: #8080BF;
+    text-align: center;
+    color: #F3F2E5;
+    width:960px;
+    margin: auto;
+}
+
+.title{
+    font-family: 'Galada', cursive;
+    font-size:60px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.burgerImage{
+    height:200px;
+    margin:auto;
+}
+
+.eaten, .toEat{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    width: 45%;
+    float: left;
+    font-size: 20px;
+}
+
+.form{
+    width:100%;
+    float: left;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.formTitle{
+    font-family: 'Galada', cursive;
+    font-size: 35px;
+    margin-bottom: 1%;
+}
+
+.eat{
+    font-family: "Encode Sans Condensed" , sans-serif;
+    color:#F3F2E5;
+    text-align: center;
+    width:100px;
+    padding: 0;
+    background-color: #374759;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
