@@ -6,6 +6,11 @@ body{
     margin: auto;
 }
 
+ul{
+    list-style-type:none;
+
+}
+
 .title{
     font-family: 'Galada', cursive;
     font-size:60px;
@@ -19,16 +24,29 @@ body{
 }
 
 .eaten, .toEat{
+    background-color: lightslategray;
+    border: 5px solid #F3F2E5;
+    border-radius:25px;
+    line-height: 50px;
     font-family: 'Encode Sans Condensed', sans-serif;
     width: 45%;
     float: left;
     font-size: 20px;
 }
 
+.eaten{
+    margin-left:70px;
+}
+
 .form{
+    background-color: lightslategray;
+    border: 5px solid #F3F2E5;
+    border-radius:25px;
     width:100%;
     float: left;
+    margin-bottom:50px;
     font-family: 'Encode Sans Condensed', sans-serif;
+    padding-bottom:10px;
 }
 
 .formTitle{
@@ -37,11 +55,17 @@ body{
     margin-bottom: 1%;
 }
 
+#formButton{
+    margin-top:15px;
+}
+
 .eat{
     font-family: "Encode Sans Condensed" , sans-serif;
+    border-radius:25px;
     color:#F3F2E5;
     text-align: center;
     width:100px;
+    height:30px;
     padding: 0;
     background-color: #374759;
     cursor:pointer;
