@@ -57,6 +57,17 @@ ul{
 
 #formButton{
     margin-top:15px;
+    font-family: "Encode Sans Condensed" , sans-serif;
+    border-radius:25px;
+    color:#F3F2E5;
+    text-align: center;
+    width:100px;
+    height:30px;
+    padding: 0;
+    background-color: #374759;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
 .eat{
